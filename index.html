@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website Title -->
+    <title>KIDZ CLUB | HOME</title>
+
+    <!-- Google Fonts -->
+    <!-- Preconnecting can help reduce the latency when actual requests are made to this domain, such as when fetching font resources. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+  </head>
+  <body>
+    <!-------------- Hero Section-------------- -->
+    <!-- Header -->
+    <section class="hero-section">
+      <div class="hero-section__overlay"></div>
+      <div class="hero-section__content">
+        <h1 class="container">
+          <span> WELCOME</span>
+          <span> To KIDZ CLUB </span>
+          <span>CHILDCARE LLC</span>
+        </h1>
+      </div>
+      <header>
+        <div class="container header-box">
+          <img src="./assets/Logo Kidz club.png" alt="" class="logo" />
+          <nav>
+            <ul class="navlinks">
+              <li class="items"><a href="./index.html">Home</a></li>
+              <li class="items"><a href="./index.html#about">About</a></li>
+              <li class="items">
+                <a href="./index.html#services">Services </a>
+              </li>
+              <li class="items">
+                <a href="">Gallery </a>
+              </li>
+              <li class="contactUs-btn">
+                <button><a href="./index.html#contact"> Contact Us</a></button>
+              </li>
+              <li onclick="showSidebar()" class="hamburger-icon">
+                <ion-icon name="menu-outline"></ion-icon>
+              </li>
+            </ul>
+            <ul class="sidebar">
+              <li onclick="closeSidebar()" class="close-icon">
+                <a href="#"><ion-icon name="close-outline"></ion-icon></a>
+              </li>
+              <li class="items"><a href="#">Home</a></li>
+              <li class="items"><a href="#">About</a></li>
+              <li class="items sidebar-subNavMenu">
+                <a class="sidebar-subNavMenu-btn"
+                  >Courses
+                  <span class="sidebar-subNavMenu-btn-caret"
+                    ><i class="fas fa-caret-down"></i></span
+                ></a>
+
+                <div class="sidebar-subNavMenu-dropdown">
+                  <nav>
+                    <a href="./pages/cctvOperator.html">CCTV Operator Course</a>
+                    <a href="./pages/doorSupervisor.html"
+                      >Door Supervisor Course</a
+                    >
+                    <a href="./pages/doorSupervisorTop.html"
+                      >Door Supervisor Top Up Course</a
+                    >
+                    <a href="./pages/firstAid.html">First Aid Courses</a>
+                    <a href="./pages/foodSafety.html">Food Safety Course</a>
+                    <a href="./pages/securityGuarding.html"
+                      >Security Guarding Course</a
+                    >
+                    <a href="./pages/securityTraining.html">Security Trainer</a>
+                    <a href="./pages/trafficMarshal.html"
+                      >Traffic Marshal Course</a
+                    >
+                  </nav>
+                </div>
+              </li>
+              <img
+                src="./assets/WhatsApp Image 2024-04-27 at 22.19.05_e68c823a.jpg"
+                alt=""
+              />
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </section>
+    <!-- Scroll to Top -->
+    <div class="scroll_to_top">
+      <i class="far fa-long-arrow-alt-up"></i>
+    </div>
+    <!---------------- About Section ------------->
+    <section class="about-section" id="about">
+      <div class="about-section__grid container">
+        <div class="about-section__grid__left">
+          <h2>About Us!</h2>
+          <p>
+            At
+            <span> KIDZ CLUB Childcare</span>
+            , we believe that childhood is a magical journey full of wonder,
+            laughter, and endless possibilities. Our cozy and colorful home is a
+            haven where imaginations run wild, friendships blossom, and little
+            hearts are nurtured with love and care.
+            <span> KIDZ CLUB Childcare</span> provides personalized care
+            tailored to meet the unique needs of each child. Our program is
+            designed to foster social, emotional, cognitive, and physical
+            development through age-appropriate activities, educational games,
+            and creative play.
+          </p>
+          <p>
+            As a licensed and certified child care provider,
+            <span> KIDZ CLUB Childcare</span>
+            prioritizes safety above all else. Our home is equipped with
+            childproofing measures, and we adhere to strict health and safety
+            guidelines to ensure a secure environment for your little ones.
+          </p>
+          <img src="./assets/graph (1).png" alt="" />
+        </div>
+        <div class="about-section__grid__right">
+          <img src="./assets/about pic.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-------------- Pricing Section---------------->
+    <section class="pricing-section">
+      <div class="container">
+        <!--for demo wrap-->
+        <h3>Pricing Table</h3>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>Ages</th>
+                <th>Full Day</th>
+                <th>Half Day</th>
+                <th>Drop In</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <td>Infant (birth – 12 months)</td>
+                <td>$88.00 per day</td>
+                <td>$ 44.00 per day</td>
+                <td>Negotiable</td>
+              </tr>
+              <tr>
+                <td>Enhanced Toddler (12 months – 18 months)</td>
+                <td>$88.00 per day</td>
+                <td>$44.00 per day</td>
+
+                <td>Negotiable</td>
+              </tr>
+              <tr>
+                <td>Toddler</td>
+                <td>$78.00 per day</td>
+                <td>$39.00 per day</td>
+                <td>Negotiable</td>
+              </tr>
+              <tr>
+                <td>Preschool</td>
+                <td>$68.00 per day</td>
+                <td>$34.00 per day</td>
+                <td>Negotiable</td>
+              </tr>
+              <tr>
+                <td>School Age</td>
+                <td>$60.00 per day</td>
+                <td>$30.00 per day</td>
+                <td>Negotiable</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- Pdf Section -->
+    <section class="pdf-section">
+      <h2>Policy Guide</h2>
+      <div class="pdf-section__grid container">
+        <div class="pdf-section__grid__bar">
+          <a href="./pdfs/KIDZ CLUB CHILDCARE LLC 2023 HEALTH POLICY.pdf">
+            <i class="fal fa-file-pdf"></i>
+          </a>
+
+          <h4>KIDZ CLUB CHILDCARE LLC 2023 HEALTH POLICY</h4>
+        </div>
+        <div class="pdf-section__grid__bar">
+          <a
+            href="./pdfs/KIDZ CLUB CHILDCARE LLC 2023 PARENT HANBOOK INCLUDING COVID 19 POLICY .pdf"
+            ><i class="fal fa-file-pdf"></i
+          ></a>
+
+          <h4>
+            KIDZ CLUB CHILDCARE LLC 2023 PARENT HANBOOK INCLUDING COVID 19
+            POLICY
+          </h4>
+        </div>
+      </div>
+    </section>
+    <!------------ Services Section---------------->
+    <section class="security-cards-section" id="services">
+      <div class="security-cards container">
+        <h2>Services We Offer</h2>
+        <div class="security-cards-gird-1">
+          <div class="ag-courses_box security-card-1">
+            <a class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+
+              <div class="ag-courses-item_title">
+                Enriching Learning Experiences
+              </div>
+
+              <div class="ag-courses-item_content">
+                Dive into a world of discovery with our enriching learning
+                experiences! From ABCs to 123s, our curriculum is designed to
+                spark curiosity, stimulate imaginations, and lay the foundation
+                for lifelong learning.
+              </div>
+            </a>
+          </div>
+          <div class="ag-courses_box security-card-2">
+            <a class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+
+              <div class="ag-courses-item_title">
+                Creative Playtime Adventures
+              </div>
+
+              <div class="ag-courses-item_content">
+                Let creativity soar with our imaginative playtime adventures!
+                Our play-based approach encourages self-expression,
+                problem-solving, and social interaction in a fun and supportive
+                environment.
+              </div>
+            </a>
+          </div>
+          <div class="ag-courses_box security-card-3">
+            <a class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+
+              <div class="ag-courses-item_title">
+                Outdoor Exploration and Nature Discovery
+              </div>
+
+              <div class="ag-courses-item_content">
+                Step outside and discover the wonders of nature with our outdoor
+                exploration and nature discovery activities! Whether it's
+                digging in the dirt, exploring the backyard jungle, or going on
+                a nature scavenger hunt. .
+              </div>
+            </a>
+          </div>
+          <div class="ag-courses_box security-card-4">
+            <a class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+
+              <div class="ag-courses-item_title">
+                Arts and Crafts Extravaganzay
+              </div>
+
+              <div class="ag-courses-item_content">
+                Unleash your inner Picasso with our arts and crafts
+                extravaganza! From finger painting masterpieces to DIY
+                creations, our art activities inspire creativity, boost fine
+                motor skills, and ignite a passion for self-expression. With a
+                rainbow of colors, a treasure trove of craft supplies, and
+                endless possibilities, children unleash their imagination and
+                bring their artistic visions to life!
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------- Footer------------ -->
+    <footer id="contact">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2703.0150616108167!2d-122.1746594!3d47.3531039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905f28db55ae71%3A0xfead4590fdaf0ce!2s12518%20SE%20277th%20Pl%2C%20Kent%2C%20WA%2098030%2C%20USA!5e0!3m2!1sen!2s!4v1714765120381!5m2!1sen!2s"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+      <div class="container footer-flexbox">
+        <div class="footer-flexbox-left">
+          <h4>Get In Touch With Us</h4>
+          <div>
+            <i class="fas fa-paper-plane"></i>
+            <h3>
+              Email :
+              <span>
+                <a href="mailto:info@comfortline.ec">
+                  Farah@kidzclubchildcare.com</a
+                >
+              </span>
+            </h3>
+          </div>
+          <div>
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone : <span> +1(502)-345-4817 </span></h3>
+          </div>
+
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>
+              Address :
+              <span>12518 SE 277TH PL. KENT, WA 98030 </span>
+            </h3>
+          </div>
+        </div>
+
+        <div class="footer-flexbox-right">
+          <form method="post" name="google-sheet">
+            <span
+              >Send feedback or Ask us any question about our Home Day
+              Care</span
+            >
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="number" placeholder="Number" required />
+
+            <textarea
+              name="message"
+              cols="30"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- <div class="footer-copyright container">
+        © Copyright Comfortline 2017. All rights reserved.
+      </div> -->
+    </footer>
+  </body>
+  <script src="./js/function.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
