@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website Title -->
+    <title>KIDZ CLUB | Gallery</title>
+
+    <!-- Google Fonts -->
+    <!-- Preconnecting can help reduce the latency when actual requests are made to this domain, such as when fetching font resources. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/responsive.css" />
+  </head>
+  <body>
+    <!-------------- Hero Section-------------- -->
+    <!-- Header -->
+    <section class="hero-section">
+      <div class="hero-section__overlay"></div>
+      <div class="hero-section__content">
+        <h1 class="container">
+          <span> WELCOME</span>
+          <span> To KIDZ CLUB </span>
+          <span>CHILDCARE LLC</span>
+        </h1>
+      </div>
+      <header>
+        <div class="container header-box">
+          <img src="../assets/Logo Kidz club.png" alt="" class="logo" />
+          <nav>
+            <ul class="navlinks">
+              <li class="items"><a href="../index.html">Home</a></li>
+              <li class="items"><a href="../index.html#about">About</a></li>
+              <li class="items">
+                <a href="../index.html#services">Services </a>
+              </li>
+              <li class="items">
+                <a href="./gallery.html">Gallery </a>
+              </li>
+              <li class="contactUs-btn">
+                <button><a href="../index.html#contact"> Contact Us</a></button>
+              </li>
+              <li onclick="showSidebar()" class="hamburger-icon">
+                <ion-icon name="menu-outline"></ion-icon>
+              </li>
+            </ul>
+            <ul class="sidebar">
+              <li onclick="closeSidebar()" class="close-icon">
+                <a href="#"><ion-icon name="close-outline"></ion-icon></a>
+              </li>
+              <li class="items"><a href="../index.html">Home</a></li>
+              <li class="items"><a href="../index.html#about">About</a></li>
+              <li class="items sidebar-subNavMenu">
+                <a href="../index.html#services">Services </a>
+              </li>
+              <li class="items"><a href="./gallery.html">Gallery</a></li>
+              <img src="../assets/Logo_Kidz_club-removebg-preview.png" alt="" />
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </section>
+    <!-- Scroll to Top -->
+    <div class="scroll_to_top">
+      <i class="far fa-long-arrow-alt-up"></i>
+    </div>
+
+    <!-- ------------Gallery Section----------- -->
+    <section class="gallery-section">
+      <h1>
+        <span> Kidz Club Chilcare </span>
+        <span> Gallery</span>
+      </h1>
+      <div class="gallery-section__grid container">
+        <img src="../assets/daycare1.jpg" alt="" />
+        <img src="../assets/daycare 2.jpg" alt="" />
+        <img src="../assets/daycare 3.jpg" alt="" />
+        <img src="../assets/daycare 4.jpg" alt="" />
+        <img src="../assets/daycare 5.jpg" alt="" />
+        <img src="../assets/about pic.jpg" alt="" />
+      </div>
+      <div class="gallery-section__video container">
+        <video controls width="100%">
+          <source src="../assets/KIDZ CLUB MOVIE.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <!---------------- Footer------------ -->
+    <footer id="contact">
+      <div class="container footer-flexbox">
+        <div class="footer-flexbox-left">
+          <h4>Get In Touch With Us</h4>
+          <div>
+            <i class="fas fa-paper-plane"></i>
+            <h3>
+              Email :
+              <span>
+                <a href="mailto:info@comfortline.ec">
+                  Farah@kidzclubchildcare.com</a
+                >
+              </span>
+            </h3>
+          </div>
+          <div>
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone : <span> +1(502)-345-4817 </span></h3>
+          </div>
+
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>
+              Address :
+              <span>12518 SE 277TH PL. KENT, WA 98030 </span>
+            </h3>
+          </div>
+        </div>
+
+        <div class="footer-flexbox-right">
+          <form method="post" name="google-sheet">
+            <span
+              >Send feedback or Ask us any question about our Home Day
+              Care</span
+            >
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="number" placeholder="Number" required />
+
+            <textarea
+              name="message"
+              cols="30"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2703.0150616108167!2d-122.1746594!3d47.3531039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905f28db55ae71%3A0xfead4590fdaf0ce!2s12518%20SE%20277th%20Pl%2C%20Kent%2C%20WA%2098030%2C%20USA!5e0!3m2!1sen!2s!4v1714765120381!5m2!1sen!2s"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+      <div class="footer-copyright">
+        © KIDZ CLUB CHILDCARE LLC 2019 . All rights reserved.
+      </div>
+    </footer>
+  </body>
+  <script src="../js/function.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
